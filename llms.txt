@@ -1,0 +1,7 @@
+# DekoVägi slide layouts
+
+> Numbered PowerPoint slide layouts for DekoVägi event-decor presentations, with the rules for choosing them.
+
+- [Instructions, rules and the catalogue of all layouts](deck-rules.md)
+- [Every field of every layout](layouts.json)
+- [Style guide](STYLE-GUIDE.md)

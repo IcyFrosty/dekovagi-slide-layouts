@@ -1,0 +1,87 @@
+{
+  "name": "DekoVägi slide style",
+  "version": "1.0",
+  "date": "2026-11-06",
+  "source": "Measured with extract_all.py from 17 decks (205 slides, 3021 text runs, 447 pictures). The canonical value is the one most decks use; near-duplicates are unified (see audit).",
+  "units": "pt. The slide is 1215 x 810 pt (16.875 x 11.25 in, 3:2). For HTML at 1620 x 1080 px multiply by 4/3.",
+  "slide": {"w": 1215, "h": 810, "ratio": "3:2"},
+  "grid": {
+    "margin_x": 78, "margin_top": 72, "content_w": 1059, "content_right": 1137,
+    "safe_bottom": 724,
+    "columns": 12, "gutter": 24, "column_w": 66.25,
+    "spans": {"2-up": 517.5, "3-up": 337, "4-up": 246.75, "6-up": 156.5},
+    "notes": "Text never starts left of x 78 or ends right of x 1137, except text inside a colour panel or card, which keeps 48 pt padding. Photos may bleed to any slide edge. Nothing but the logo sits below y 724."
+  },
+  "colours": {
+    "cream": {"hex": "#F7F2EA", "use": "default page background; text on dark backgrounds"},
+    "paper": {"hex": "#F1E8DB", "use": "tinted panel on cream, empty image placeholder"},
+    "sand": {"hex": "#E2D8C8", "use": "hairlines (1 pt) on light backgrounds"},
+    "olive": {"hex": "#444C3B", "use": "dark background: concept, statement, numbers, closing"},
+    "wine": {"hex": "#5E1F28", "use": "dark background, second choice (the burgundy background)"},
+    "ink": {"hex": "#2B2520", "use": "titles on light backgrounds"},
+    "body": {"hex": "#6A6055", "use": "body text, bullets and small labels on light backgrounds"},
+    "accent": {"hex": "#8E2B39", "use": "italic title accent, kicker label and meta values on light backgrounds. Text only, never a background.",
+               "per_project": true, "seen": ["#8E2B39 (14 decks)", "#A24E2C (template K08)"]},
+    "rose": {"hex": "#E4C3AE", "use": "italic accent, kicker label and small labels on dark backgrounds"},
+    "gold": {"hex": "#A98A5E", "use": "kicker mark, photo numbers, short accent rules, outlines"},
+    "night": {"hex": "#14100C", "use": "photo scrim only (with transparency), never a page background"}
+  },
+  "backgrounds": {
+    "allowed": ["cream", "olive", "wine", "photo"],
+    "on_light": {"title": "ink", "accent": "accent", "kicker": "accent", "body": "body", "label": "body", "hairline": "sand", "logo": "dark"},
+    "on_dark": {"title": "cream", "accent": "rose", "kicker": "rose", "body": "cream", "label": "rose", "hairline": "cream @ 25 %", "logo": "white"},
+    "not_allowed": ["black #1C1917 (off brand)", "accent #8E2B39 as a background", "white #FFFFFF as a background", "neon or client colours as backgrounds"]
+  },
+  "fonts": {
+    "serif": "Cormorant Garamond", "sans": "Hanken Grotesk", "only": "these two families; no third font (JetBrains Mono dropped 07.11.2026)",
+    "numerals": "lining (font-variant-numeric: lining-nums); Cormorant's default old-style figures read as letters"
+  },
+  "text_styles": {
+    "display":   {"font": "serif", "size": 111,  "line": 0.94, "track": -2.78, "use": "cover title, 1 or 2 lines; line 2 italic accent"},
+    "opener":    {"font": "serif", "size": 104,  "line": 0.90, "track": -2.0,  "use": "section opener title, line 2 italic accent"},
+    "statement": {"font": "serif", "size": 78,   "line": 1.08, "track": -1.17, "use": "one big sentence on colour, last words italic accent"},
+    "h1":        {"font": "serif", "size": 66,   "line": 1.12, "track": -0.79, "use": "slide title; second line or last words italic accent"},
+    "h2":        {"font": "serif", "size": 55.5, "line": 1.2,  "track": -0.83, "use": "long heading (3 lines), closing line, caption title over a photo, title in a narrow band or card"},
+    "h3":        {"font": "serif", "size": 28,   "line": 1.15, "track": 0,     "use": "name under a large image (table, zone, option)"},
+    "name":      {"font": "serif", "size": 22.5, "line": 1.18, "track": 0,     "use": "photo caption, item name in a grid, meta value (italic, accent), contact value"},
+    "kicker":    {"font": "sans", "size": 13.5, "weight": 700, "caps": true, "track": 4.05, "use": "label above every title, accent colour"},
+    "mark":      {"font": "sans", "size": 13.5, "weight": 400, "track": 4.05, "colour": "gold", "use": "kept for reference only: the kicker mark is now the logo leaf (see kicker_block.mark)"},
+    "body":      {"font": "sans", "size": 20,   "line": 1.6,  "track": 0, "use": "paragraphs and bullets, max about 60 characters per line"},
+    "small":     {"font": "sans", "size": 14,   "line": 1.4,  "track": 0, "use": "item details, captions under photos, text in the bottom band of the photo-on-top layout"},
+    "label":     {"font": "sans", "size": 9.75, "weight": 700, "caps": true, "track": 2.15, "use": "meta labels (KLIENT, KUUPÄEV), table headers, small tags"},
+    "number":    {"font": "sans", "size": 10.5, "weight": 700, "track": 1.26, "colour": "gold", "use": "photo and item numbers 01, 02, 03 at the right end of a caption line"},
+    "figure":    {"font": "serif", "size": 111, "line": 1.0, "track": -2.78, "use": "key numbers on the numbers slide"},
+    "watermark": {"font": "serif", "size": 330, "italic": true, "track": -12, "use": "not used: no text behind an image (Meelis, 06.11.2026). Kept only so old decks can be checked."}
+  },
+  "kicker_block": {"mark": {"type": "leaf", "file": "glyph.svg", "colour": "gold", "height": 16.5, "raise": 2.25, "source": "the leaf above the Ä in the DekoVägi logo, filled gold #A98A5E"}, "mark_text": "II", "mark_to_label_gap": 9, "kicker_to_title": 22, "title_to_body": 30,
+                   "notes": "the gold logo leaf (16.5 pt tall, centred on the label and raised 2.25 pt) and the label sit on one line at x 78 on every slide that has a kicker, cover included; the title starts 22 pt below the kicker line."},
+  "bullets": {"char": "small round dot in the accent colour (rose on dark)", "indent": 17, "space_after": 6, "max_items": 6},
+  "logo": {
+    "files": {"dark": "logo_dark.svg (on light)", "white": "logo_white.svg (on dark and on photos)"},
+    "standard": {"x": 78, "y": 742, "w": 84, "h": 26, "use": "every slide, bottom left"},
+    "standard_right": {"x": 1053, "y": 742, "w": 84, "h": 26, "use": "only when the bottom-left corner holds text or a photo (photo-on-top layout, full-bleed photo with caption bottom left)"},
+    "cover": {"x": 78, "y": 72, "w": 123, "h": 38, "use": "cover, top left"},
+    "closing": {"x": 78, "y": 703, "w": 113, "h": 35, "use": "contact and thank-you slides"},
+    "cover_card": {"w": 123, "h": 38, "use": "cover D44 only: centred at the top of the title card, no kicker (Meelis, 06.11.2026)"},
+    "notes": "One logo per slide. Never inside a photo collage cell; centred only in the D44 title card."
+  },
+  "hairline": {"weight": 1, "use": "full content width (1059) under the cover title and above the meta row; between rows of lists and tables"},
+  "images": {
+    "ratios": ["3:2", "2:3", "1:1", "4:3", "3:4", "4:5", "16:9", "21:9"],
+    "rules": [
+      "Every image slot uses one of the listed ratios; the gallery states the ratio per slot. Collage cells are free (they fill a grid).",
+      "A rendered final (photo, render, collage cell) fills its slot edge to edge (cover crop); a cut-out object sits on the background inside its box (contain).",
+      "Photos bleed to the slide edge or sit on the grid; never floating at random positions.",
+      "No rounded corners, borders or drop shadows on photos, except where a layout defines it: circle (D22, D43), arch (D40), and a 9 pt background-colour edge on a photo that overlaps another (D48, D62, D20). Cut-outs: no drop shadow.",
+      "Collage gaps: 6 pt in the background colour.",
+      "Minimum source size: 1.5 x the slot in pt (a full-bleed photo needs at least 1800 x 1200 px)."
+    ]
+  },
+  "copy": {"language": "Estonian on client decks", "no_em_dash": true, "titles": "sentence case, the italic accent is the last word or the second line",
+           "kicker": "one or two words, uppercase by style (type them normally)", "placeholders": "«Pealkiri», «aktsent.», [ Kliendi nimi ]"},
+  "decided": ["Kicker mark: the gold logo leaf, raised a few px above centre, on every kicker (Meelis, 06.11.2026; options on marks.html).", "Short side facts (room, guests, time): a ruled label/value list (label left, italic accent value right, hairlines between), never a lone floating sentence (Meelis, 07.11.2026; D5).", "Deck order: every client deck ends with D9 Lähenemine (standard text) then D31 contact; the order list D27 is internal only (Meelis, 07.11.2026).", "Key numbers (D26) in the accent colour; section opener D82 (arch photo + cut-out) by default, D8 only without a photo (Meelis, 06-07.11.2026).", "Deck roles (Meelis, 09.11.2026): cover first (pick one of D1, D40-D44), D9 second to last, D31 last; edge cases D8, D49, D54, D38, D32 only when their condition applies; D27 internal only. Details: gallery deck-rules.md.", "Two font families only: Cormorant Garamond and Hanken Grotesk. The small gold item numbers (01, 02, 03 on D21, D38, D39) are Hanken Grotesk Bold, not JetBrains Mono (Meelis, 07.11.2026)."],
+  "open_decisions": [
+    "Accent per project: #8E2B39 burgundy (default) or #A24E2C terracotta (template K08)?",
+    "Page numbers ('02/ 10', bottom right) appear only in the base deck: dropped by default; if used, Hanken Grotesk like the item numbers."
+  ]
+}
