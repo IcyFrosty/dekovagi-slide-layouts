@@ -1,7 +1,8 @@
 # DekoVägi slide layouts
 
-> Numbered PowerPoint slide layouts for DekoVägi event-decor presentations, with the rules for choosing them.
+> Numbered PowerPoint slide layouts for DekoVägi event-decor presentations, with the rules for choosing them and a kit for building decks.
 
-- [Instructions, rules and the catalogue of all layouts](deck-rules.md)
-- [Every field of every layout](layouts.json)
-- [Style guide](STYLE-GUIDE.md)
+- [Instructions for AI assistants: rules, catalogue and every field of every layout](https://icyfrosty.github.io/dekovagi-slide-layouts/deck-rules.md)
+- [AI kit: the template as .pptx, a helper script and the instructions](https://icyfrosty.github.io/dekovagi-slide-layouts/DekoVagi-AI-kit.zip)
+- [Every layout as data](https://icyfrosty.github.io/dekovagi-slide-layouts/layouts.json)
+- [Style guide](https://icyfrosty.github.io/dekovagi-slide-layouts/STYLE-GUIDE.md)

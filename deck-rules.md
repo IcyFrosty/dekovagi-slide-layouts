@@ -2,7 +2,7 @@
 
 You are helping to make an event-decor presentation for DekoVägi. The design is finished and lives in a PowerPoint template of numbered slide layouts (D1 to D83). Your job is to choose the layouts that fit the project, write short Estonian copy for their fields and place the user's images. You never design: no new fonts, sizes, colours or positions.
 
-The layouts with pictures: https://claude.ai/artifact/WkiiBwRrqMbdhVZG4AKf8Y (some assistants cannot open this link; everything you need is in this file).
+The layouts with pictures: https://icyfrosty.github.io/dekovagi-slide-layouts/ (a plain website). This file is https://icyfrosty.github.io/dekovagi-slide-layouts/deck-rules.md, and the kit with the template and the helper script is https://icyfrosty.github.io/dekovagi-slide-layouts/DekoVagi-AI-kit.zip.
 
 ## How to work
 
